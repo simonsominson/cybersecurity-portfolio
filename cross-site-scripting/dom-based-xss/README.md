@@ -40,7 +40,7 @@ Untrusted URL input was inserted into an HTML parsing sink (`innerHTML`) without
 
 ## Evidence
 
-Screenshots are stored in the [`evidence/`](evidence/) directory:
+Screenshots are stored in the [evidencias/](evidencias/) directory:
 
 - `01-search-request.png` — Baseline search request.
 - `02-search-response.png` — JavaScript data flow and vulnerable sink.

@@ -1,37 +1,86 @@
 # Cybersecurity Portfolio
 
-Hi! I'm currently learning cybersecurity, with a focus on web application security.
+I'm developing my cybersecurity skills with a focus on web application security, vulnerability assessment, and security testing.
 
-This repository contains practical labs I've completed through PortSwigger Web Security Academy. I'm using these labs to improve my technical skills, understand common web vulnerabilities, and learn how to identify, test, and document security issues.
+This repository contains practical labs completed through PortSwigger Web Security Academy. Each project documents the testing process, evidence, potential impact, root cause, and recommended remediation.
 
 ## Skills and Tools
 
-- **Burp Suite:** intercepting and testing HTTP requests.
-- **Web Security Testing:** testing common vulnerabilities in web applications.
-- **Access Control:** understanding and testing IDOR and access control issues.
-- **Cross-Site Scripting (XSS):** testing DOM-based XSS vulnerabilities.
-- **OS Command Injection:** testing command injection vulnerabilities.
-- **Security Reports:** documenting findings, evidence, impact, and possible fixes.
+- **Burp Suite:** HTTP request interception, inspection, and manipulation.
+- **Web Application Security Testing:** Identifying and validating common web vulnerabilities.
+- **Access Control:** IDOR, broken access control, and vertical privilege escalation.
+- **Injection Vulnerabilities:** SQL injection, OS command injection, and server-side template injection (SSTI).
+- **Cross-Site Scripting (XSS):** DOM-based XSS.
+- **Server-Side Vulnerabilities:** Path traversal, XML External Entity (XXE), Server-Side Request Forgery (SSRF), and Remote Code Execution (RCE).
+- **CSRF and Business Logic:** Testing request forgery and workflow validation issues.
+- **API Security:** Mass assignment testing.
+- **Security Reporting:** Documenting findings, evidence, impact, root cause, and remediation.
 
 ## Practical Labs
 
-### 1. [DOM-Based XSS](cross-site-scripting/dom-based-xss/README.md)
+### Access Control
 
-Tested a DOM-based XSS vulnerability caused by unsafe handling of user input in a web page.
+- [IDOR — Insecure Direct Object Reference](access-control/IDOR/)
+- [Vertical Privilege Escalation](access-control/vertical-privilege-escalation/)
 
-### 2. [IDOR — Insecure Direct Object Reference](access-control/IDOR/README.md)
+### API Security
 
-Tested an access control issue that allowed access to another user's information by changing a request parameter.
+- [Mass Assignment](api-testing/mass-assignment/)
 
-### 3. [OS Command Injection](os-command-injection/README.md)
+### Business Logic
 
-Tested an OS command injection vulnerability by modifying an HTTP request and confirming command execution through the server response.
+- [Insufficient Workflow Validation](business-logic/insufficient-workflow-validation/)
 
-## My Goal
+### Cross-Site Scripting (XSS)
 
-I'm working towards my first opportunity in cybersecurity, ideally in a trainee or junior role.
+- [DOM-Based XSS](cross-site-scripting/dom-based-xss/)
 
-I'm focused on improving my practical skills, learning how vulnerabilities work, and building a portfolio with clear reports and evidence from authorized labs.
+### Cross-Site Request Forgery (CSRF)
 
-This portfolio will continue to grow as I complete more labs and improve my knowledge.
+- [CSRF Vulnerability with No Defenses](csrf/csrf-vulnerability-not-defenses/)
+
+### OS Command Injection
+
+- [OS Command Injection](os-command-injection/)
+
+### Path Traversal
+
+- [Path Traversal](path-traversal/)
+
+### Remote Code Execution (RCE)
+
+- [Remote Code Execution](remote-code-execution/)
+
+### Server-Side Request Forgery (SSRF)
+
+- [Server-Side Request Forgery](server-side-request-forgery/)
+
+### SQL Injection
+
+- [SQL Injection](sql-injection/)
+
+### Server-Side Template Injection (SSTI)
+
+- [SSTI](ssti/)
+
+### XML External Entity (XXE)
+
+- [XXE](xxe/)
+
+## Documentation and Evidence
+
+Labs are organized into dedicated directories. Depending on the project, each directory contains a README, a technical report, and screenshots documenting the testing process and results.
+
+Reports cover the vulnerability description, evidence, impact, root cause, remediation, and estimated severity where applicable.
+
+## Career Objective
+
+I'm working towards my first professional opportunity in cybersecurity, particularly in a trainee or junior role focused on application security.
+
+My current goals are to strengthen my practical testing skills, improve vulnerability analysis and technical reporting, and build a portfolio demonstrating my progress through hands-on labs.
+
+## Disclaimer
+
+All testing documented in this repository was performed in authorized educational lab environments for learning purposes. The findings do not represent assessments of production systems unless explicitly stated.
+
 
